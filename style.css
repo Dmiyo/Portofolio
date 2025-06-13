@@ -62,19 +62,34 @@ nav a {
 nav a:hover {
     color: #a7a7a7;
 }
-.btn-singning {
-    background-color: #a7a7a7;
-    color: black;
-    padding: 0.8rem 2rem;
+.tag-box {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right,#e7e7e7, #a7a7a7, #8a8a8a);
+    padding: 2px;
     border-radius: 50px;
     border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: backgraound-color 0.2s ease;
     cursor: pointer;
+    animation: animationGradient 2.5s linear infinite;
 }
-.btn-singning:hover {
-    background-color: white;
+@keyframes animationGradient {
+    0% {
+        background-position: 0% center;
+    }
+}
+.tag-box .btn-singning {
+    background-color: black;
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    display: block;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+.tag-box .btn-singning:hover {
+    color: #e7e7e7;
+    transform: scale(0.98);
 }
 main {
     display: flex;
@@ -87,7 +102,16 @@ main {
     margin-left: 9%;
     z-index: 999;
 }
-h1 {
+.content h1 {
     font-size: 4rem;
     font-weight: 600;
+    margin: 2rem 0;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(128, 128, 128, 0.418);
+}
+.desription {
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    max-width: 35rem;
+    color: gray;
 }
