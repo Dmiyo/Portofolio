@@ -5,20 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>DOMIYO</title>
 </head>
 <body>
 
     <header class="header">
         <a href="#" class="logo">DOMIYO</a>
-        <div class="menu">
-            <i class="fa a-bars" aria-hidden="true"></i>
-        </div>
         <nav class="navbar">
             <a href="#home">about</a>
             <a href="#Education">academy</a>
-            <a href="#Service">home</a>
-            <a href="#Testimonials">home</a>
+            <a href="#Service">service</a>
             <a href="#Contact">CONTACT ME</a>
         </nav>
     </header>
@@ -36,8 +32,7 @@
                 <i class="fab fa-instagram" aria-hidden="true"></i>
             </div>
             <div class="flex-btn">
-                <a href="#" class="btn hire">HIRE</a>
-                <a href="#" class="btn">CONTACT</a>
+                <a href="#Contact" class="btn">CONTACT</a>
             </div>
         </div>
         <img src="" alt="">
@@ -80,6 +75,7 @@
             </div>
         </div>
     </section>
+
     <section class="skill" id="Service">
         <div class="headling">
             <h2>Skill & Tools</h2>
@@ -90,9 +86,9 @@
                 <div class="progress-bar">
                     <div class="bar" style="--target: 89%"><span>89%</span></div>
                 </div>
-                <h2>Design</h2>
+                <h2>Detailing</h2>
                 <div class="progress-bar">
-                    <div class="bar" style="--target: 64%"><span>64%</span></div>
+                    <div class="bar" style="--target: 84%"><span>84%</span></div>
                 </div>
                 <h2>Front-end</h2>
                 <div class="progress-bar">
@@ -104,25 +100,20 @@
                 </div>
             </div>
             <div class="container">
-                <h2>Otomotif</h2>
+                <h2>Ui/Ux </h2>
                 <div class="progress-bar">
-                    <div class="bar"><span>89%</span></div>
+                    <div class="bar" style="--target: 70%"><span>70%</span></div>
+                </div>
+                <h2>Editing</h2>
+                <div class="progress-bar">
+                    <div class="bar" style="--target: 55%"><span>55%</span></div>
                 </div>
                 <h2>Design</h2>
                 <div class="progress-bar">
-                    <div class="bar"><span>89%</span></div>
-                </div>
-                <h2>Front-end</h2>
-                <div class="progress-bar">
-                    <div class="bar"><span>89%</span></div>
-                </div>
-                <h2>Back-end</h2>
-                <div class="progress-bar">
-                    <div class="bar"><span>89%</span></div>
+                    <div class="bar" style="--target: 58%"><span>58%</span></div>
                 </div>
             </div>
         </div>
-
         <div class="slider" style="
             --width: 100px;
             --height: 100px;
@@ -138,6 +129,69 @@
                 <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>                        
                 <div class="item" style="--position: 8"><img src="images/8.png" alt=""></div>
                 <div class="item" style="--position: 9"><img src="images/9.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="Contact">
+        <div class="wrapper">
+            <div class="info">
+                <h2>Contact Me</h2>
+                <p class="more">Looking to collaborate or learn more about what I do? You can reach me through the contact information below</p>
+                <div class="contact-detail">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3 style="color: #c176b9;">Phone</h3>
+                            <p  style="color: #fff;">+62-878-6608-8705</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3  style="color: #c176b9;">Email</h3>
+                            <p style="color: #fff;">muhammadnugroho262@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3  style="color: #c176b9;">Location</h3>
+                            <p style="color: #fff;">Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forum">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
