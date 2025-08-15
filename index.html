@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
 
     <header class="header">
-        <a href="#" class="logo">DOMIYO</a>
-        <nav class="navbar">
+        <a href="home" class="logo">DOMIYO</a>
+        <div class="menu-toggle" id="toggle">&#9776;</div>
+        <nav class="navbar" id="navbar">
             <a href="#home">about</a>
             <a href="#Education">academy</a>
             <a href="#Service">service</a>
@@ -27,16 +27,16 @@
             <p>a digital creative focused on combining design and code to craft modern, meaningful web experiences.
             I believe in the power of simplicity, clarity, and strong visual communication.
             Whether it’s building a product or refining a user interface, I strive to make every detail count.</p>
+            <div class="flex-btn">
+                <a href="#Contact" class="btn">CONTACT</a>
+            </div>
             <div class="icons">
                 <i class="fab fa-linkedin" aria-hidden="true"></i>
                 <i class="fab fa-github" aria-hidden="true"></i>
                 <i class="fab fa-instagram" aria-hidden="true"></i>
             </div>
-            <div class="flex-btn">
-                <a href="#Contact" class="btn">CONTACT</a>
-            </div>
         </div>
-        <img src="" alt="">
+        <spline-viewer url="https://prod.spline.design/FVGQNV4x6WyUfWO9/scene.splinecode"></spline-viewer>
     </section>
 
     <section class="education" id="Education">
@@ -120,25 +120,9 @@
                 <article class="card">
                     <img src="images/project/RX-7.png" alt="image" class="card-img">
                        <div class="card-data">
-                            <span class="deskripsi">Vancouver Mountains, Canada</span>
-                            <h2 class="title">The Great Path</h2>
-                            <a href="#" class="button">Read More</a>
-                        </div>
-                </article>
-                <article class="card">
-                    <img src="images/project/RX-7.png" alt="image" class="card-img">
-                       <div class="card-data">
-                            <span class="deskripsi">Vancouver Mountains, Canada</span>
-                            <h2 class="title">The Great Path</h2>
-                            <a href="#" class="button">Read More</a>
-                        </div>
-                </article>
-                <article class="card">
-                    <img src="images/project/RX-7.png" alt="image" class="card-img">
-                       <div class="card-data">
-                            <span class="deskripsi">Vancouver Mountains, Canada</span>
-                            <h2 class="title">The Great Path</h2>
-                            <a href="#" class="button">Read More</a>
+                            <span class="deskripsi">Canva</span>
+                            <h2 class="title">CDID X EMPIRE GARAGE</h2>
+                            <a href="#" class="button">Instagram</a>
                         </div>
                 </article>
             </div>
@@ -224,5 +208,17 @@
             </div>
         </div>
     </section>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.48/build/spline-viewer.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuToggle = document.getElementById("toggle");
+        const navbar = document.getElementById("navbar");
+
+        menuToggle.addEventListener("click", function() {
+        navbar.classList.toggle("show");
+        });
+    });
+    </script>
 </body>
 </html>
