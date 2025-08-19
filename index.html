@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
@@ -10,39 +11,39 @@
 <body>
 
     <header class="header">
-        <a href="home" class="logo">DOMIYO</a>
+        <a href="home" data-aos="fade-down" data-aos-duration="1000" class="logo">DOMIYO</a>
         <div class="menu-toggle" id="toggle">&#9776;</div>
         <nav class="navbar" id="navbar">
-            <a href="#home">about</a>
-            <a href="#Education">academy</a>
-            <a href="#Service">service</a>
-            <a href="#Contact">CONTACT ME</a>
+            <a data-aos="fade-down-left" data-aos-duration="1500" href="#home">about</a>
+            <a data-aos="fade-down-left" data-aos-duration="2000" href="#Education">academy</a>
+            <a data-aos="fade-down-left" data-aos-duration="2500" href="#Service">service</a>
+            <a data-aos="fade-down-left" data-aos-duration="3000" href="#Contact">CONTACT ME</a>
         </nav>
     </header>
 
     <section class="home" id="home">
         <div class="content">
-            <h1>hi, it's <span>M. Rafe Ario Nugroho</span> </h1>
-            <h3 class="text-animation">i'm <span></span></h3>
-            <p>a digital creative focused on combining design and code to craft modern, meaningful web experiences.
+            <h1 data-aos="fade-up" data-aos-duration="1500">hi, it's <span>M. Rafe Ario Nugroho</span> </h1>
+            <h3 data-aos="fade-up-right" data-aos-duration="1500" class="text-animation">i'm <span></span></h3>
+            <p data-aos="fade-up-right" data-aos-duration="1500">a digital creative focused on combining design and code to craft modern, meaningful web experiences.
             I believe in the power of simplicity, clarity, and strong visual communication.
             Whether it’s building a product or refining a user interface, I strive to make every detail count.</p>
-            <div class="flex-btn">
+            <div data-aos="fade-up-right" data-aos-duration="1500" class="flex-btn">
                 <a href="#Contact" class="btn">CONTACT</a>
             </div>
-            <div class="icons">
+            <div data-aos="fade-up-right" data-aos-duration="1500" class="icons">
                 <i class="fab fa-linkedin" aria-hidden="true"></i>
                 <i class="fab fa-github" aria-hidden="true"></i>
                 <i class="fab fa-instagram" aria-hidden="true"></i>
             </div>
         </div>
-        <spline-viewer url="https://prod.spline.design/FVGQNV4x6WyUfWO9/scene.splinecode"></spline-viewer>
+        <spline-viewer data-aos="fade-up-left" data-aos-duration="1500" class="spline" url="https://prod.spline.design/FVGQNV4x6WyUfWO9/scene.splinecode"></spline-viewer>
     </section>
 
     <section class="education" id="Education">
         <h2 class="headling">education</h2>
         <div class="timeline-items">
-            <div class="timeline-item">
+            <div data-aos="flip-left" data-aos-duration="1500" class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2025</div>
                 <div class="timeline-content">
@@ -50,7 +51,7 @@
                     <p>-</p>
                 </div>
             </div>
-            <div class="timeline-item">
+            <div data-aos="flip-right" data-aos-duration="1500" class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2025</div>
                 <div class="timeline-content">
@@ -58,7 +59,7 @@
                     <p>-</p>
                 </div>
             </div>
-            <div class="timeline-item">
+            <div data-aos="flip-left" data-aos-duration="1500" class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2025</div>
                 <div class="timeline-content">
@@ -66,7 +67,7 @@
                     <p>-</p>
                 </div>
             </div>
-            <div class="timeline-item">
+            <div data-aos="flip-right" data-aos-duration="1500" class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2025</div>
                 <div class="timeline-content">
@@ -81,7 +82,7 @@
         <div class="headling">
             <h2>Skill & Project</h2>
         </div>
-        <div class="wrapper">
+        <div data-aos="zoom-in" data-aos-duration="1500" class="wrapper">
             <div class="container">
                 <h2>Otomotif</h2>
                 <div class="progress-bar">
@@ -100,7 +101,7 @@
                     <div class="bar" style="--target: 28%"><span>28%</span></div>
                 </div>
             </div>
-            <div class="container">
+            <div data-aos="zoom-in-up" data-aos-duration="1500" class="container">
                 <h2>Ui/Ux </h2>
                 <div class="progress-bar">
                     <div class="bar" style="--target: 70%"><span>70%</span></div>
@@ -117,7 +118,7 @@
         </div>
         <div class="project">
             <div class="row">
-                <article class="card">
+                <article data-aos="zoom-in" data-aos-duration="1000" class="card">
                     <img src="images/project/RX-7.png" alt="image" class="card-img">
                        <div class="card-data">
                             <span class="deskripsi">Canva</span>
@@ -154,56 +155,56 @@
                 <div class="contact-detail">
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+                            <i data-aos="zoom-out-up" data-aos-duration="800" class="fas fa-phone"></i>
                         </div>
                         <div class="contact-text">
-                            <h3 style="color: #c176b9;">Phone</h3>
-                            <p  style="color: #fff;">+62-878-6608-8705</p>
+                            <h3 data-aos="zoom-out-up" data-aos-duration="1000" style="color: #c176b9;">Phone</h3>
+                            <p data-aos="zoom-out-up" data-aos-duration="1200"  style="color: #fff;">+62-878-6608-8705</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                            <i data-aos="zoom-out-up" data-aos-duration="1000" class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-text">
-                            <h3  style="color: #c176b9;">Email</h3>
-                            <p style="color: #fff;">muhammadnugroho262@gmail.com</p>
+                            <h3 data-aos="zoom-out-up" data-aos-duration="1200" style="color: #c176b9;">Email</h3>
+                            <p data-aos="zoom-out-up" data-aos-duration="1400" style="color: #fff;">muhammadnugroho262@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-location-dot"></i>
+                            <i data-aos="zoom-out-up" data-aos-duration="1200" class="fas fa-location-dot"></i>
                         </div>
                         <div class="contact-text">
-                            <h3  style="color: #c176b9;">Location</h3>
-                            <p style="color: #fff;">Indonesia</p>
+                            <h3 data-aos="zoom-out-up" data-aos-duration="1400" style="color: #c176b9;">Location</h3>
+                            <p data-aos="zoom-out-up" data-aos-duration="1600" style="color: #fff;">Indonesia</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="forum">
                 <form action="#" method="POST">
-                    <div class="form-group">
+                    <div data-aos="zoom-out-up" data-aos-duration="1000" class="form-group">
                         <input type="text" id="name" name="name" required>
                         <label for="name">Your Name</label>
                     </div>
 
-                    <div class="form-group">
+                    <div data-aos="zoom-out-up" data-aos-duration="1000" class="form-group">
                         <input type="email" id="email" name="email" required>
                         <label for="email">Your Email</label>
                     </div>
 
-                    <div class="form-group">
+                    <div data-aos="zoom-out-up" data-aos-duration="1000" class="form-group">
                         <input type="text" id="subject" name="subject" required>
                         <label for="subject">Subject</label>
                     </div>
 
-                    <div class="form-group">
+                    <div data-aos="zoom-out-up" data-aos-duration="1000" class="form-group">
                         <textarea id="message" name="message" required></textarea>
                         <label for="message">Your Message</label>
                     </div>
 
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button data-aos="zoom-out-up" data-aos-duration="1200" type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
         </div>
@@ -220,5 +221,7 @@
         });
     });
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script>
 </body>
 </html>
