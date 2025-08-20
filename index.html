@@ -32,9 +32,9 @@
                 <a href="#Contact" class="btn">CONTACT</a>
             </div>
             <div data-aos="fade-up-right" data-aos-duration="1500" class="icons">
-                <i class="fab fa-linkedin" aria-hidden="true"></i>
-                <i class="fab fa-github" aria-hidden="true"></i>
-                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <a href="https://www.linkedin.com/in/muhammad-rafe-ario-nugroho-96a147336/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/Dmiyo"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/its.domiyo/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
             </div>
         </div>
         <spline-viewer data-aos="fade-up-left" data-aos-duration="1500" class="spline" url="https://prod.spline.design/FVGQNV4x6WyUfWO9/scene.splinecode"></spline-viewer>
@@ -45,34 +45,16 @@
         <div class="timeline-items">
             <div data-aos="flip-left" data-aos-duration="1500" class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">2025</div>
                 <div class="timeline-content">
-                    <h3>High School</h3>
-                    <p>-</p>
+                    <h3>Universitas Gunadarma</h3>
+                    <p>2025</p>
                 </div>
             </div>
             <div data-aos="flip-right" data-aos-duration="1500" class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2025</div>
+                <div class="timeline-dot">.</div>
                 <div class="timeline-content">
-                    <h3>High School</h3>
-                    <p>-</p>
-                </div>
-            </div>
-            <div data-aos="flip-left" data-aos-duration="1500" class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2025</div>
-                <div class="timeline-content">
-                    <h3>High School</h3>
-                    <p>-</p>
-                </div>
-            </div>
-            <div data-aos="flip-right" data-aos-duration="1500" class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2025</div>
-                <div class="timeline-content">
-                    <h3>High School</h3>
-                    <p>-</p>
+                    <h3>SMK TARUNA BHAKTI DEPOK</h3>
+                    <p>2022 - 2025</p>
                 </div>
             </div>
         </div>
@@ -123,7 +105,7 @@
                        <div class="card-data">
                             <span class="deskripsi">Canva</span>
                             <h2 class="title">CDID X EMPIRE GARAGE</h2>
-                            <a href="#" class="button">Instagram</a>
+                            <a href="https://www.instagram.com/p/DMZ9Xb1zsEf/" class="button">Instagram</a>
                         </div>
                 </article>
             </div>
@@ -188,23 +170,19 @@
                         <input type="text" id="name" name="name" required>
                         <label for="name">Your Name</label>
                     </div>
-
                     <div data-aos="zoom-out-up" data-aos-duration="1000" class="form-group">
                         <input type="email" id="email" name="email" required>
                         <label for="email">Your Email</label>
                     </div>
-
                     <div data-aos="zoom-out-up" data-aos-duration="1000" class="form-group">
                         <input type="text" id="subject" name="subject" required>
                         <label for="subject">Subject</label>
                     </div>
-
                     <div data-aos="zoom-out-up" data-aos-duration="1000" class="form-group">
                         <textarea id="message" name="message" required></textarea>
                         <label for="message">Your Message</label>
                     </div>
-
-                    <button data-aos="zoom-out-up" data-aos-duration="1200" type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
         </div>
@@ -223,5 +201,22 @@
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script> AOS.init(); </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("FD5z-Mw38MlLXv6P2");
+        })();
+
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            emailjs.sendForm("server_prib", "template_banjir", this)
+                .then(function() {
+                    alert("Pesan berhasil dikirim!");
+                }, function(error) {
+                    alert("Gagal mengirim pesan: " + JSON.stringify(error));
+                });
+        });
+    </script>
 </body>
 </html>

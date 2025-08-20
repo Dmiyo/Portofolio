@@ -270,11 +270,6 @@ section {
     border-radius: 50%;
     background-color: var(--main-color);
 }
-.education .timeline-items .timeline-item .timeline-date {
-    color: var(--text-color);
-    font-size: 1.7rem;
-    font-weight: 600;
-}
 .education .timeline-items .timeline-item .timeline-content {
     padding: 1rem;
     width: 35rem;
