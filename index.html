@@ -3,220 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
+    <nav>
+        <a href="#" class="logo">
+            <span class="logo-mark"></span>
+            <span>Domiyo</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact"></a>Contact</li>
+        </ul>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+    </nav>
 
-    <header class="header">
-        <a href="home" data-aos="fade-down" data-aos-duration="1000" class="logo">DOMIYO</a>
-        <div class="menu-toggle" id="toggle">&#9776;</div>
-        <nav class="navbar" id="navbar">
-            <a data-aos="fade-down-left" data-aos-duration="1500" href="#home">about</a>
-            <a data-aos="fade-down-left" data-aos-duration="2000" href="#Education">academy</a>
-            <a data-aos="fade-down-left" data-aos-duration="2500" href="#Service">service</a>
-            <a data-aos="fade-down-left" data-aos-duration="3000" href="#Contact">CONTACT ME</a>
-        </nav>
-    </header>
-
-    <section class="home" id="home">
-        <div class="content">
-            <h1 data-aos="fade-up" data-aos-duration="1500">hi, it's <span>M. Rafe Ario Nugroho</span> </h1>
-            <h3 data-aos="fade-up-right" data-aos-duration="1500" class="text-animation">i'm <span></span></h3>
-            <p data-aos="fade-up-right" data-aos-duration="1500">a digital creative focused on combining design and code to craft modern, meaningful web experiences.
-            I believe in the power of simplicity, clarity, and strong visual communication.
-            Whether it’s building a product or refining a user interface, I strive to make every detail count.</p>
-            <div data-aos="fade-up-right" data-aos-duration="1500" class="flex-btn">
-                <a href="#Contact" class="btn">CONTACT</a>
-            </div>
-            <div data-aos="fade-up-right" data-aos-duration="1500" class="icons">
-                <a href="https://www.linkedin.com/in/muhammad-rafe-ario-nugroho-96a147336/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                <a href="https://github.com/Dmiyo"><i class="fab fa-github" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/its.domiyo/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-        <spline-viewer data-aos="fade-up-left" data-aos-duration="1500" class="spline" url="https://prod.spline.design/FVGQNV4x6WyUfWO9/scene.splinecode"></spline-viewer>
-    </section>
-
-    <section class="education" id="Education">
-        <h2 class="headling">education</h2>
-        <div class="timeline-items">
-            <div data-aos="flip-left" data-aos-duration="1500" class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Universitas Gunadarma</h3>
-                    <p>2025</p>
+    <section class="hero" id="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="dot">Available for Collaboration</span>
                 </div>
-            </div>
-            <div data-aos="flip-right" data-aos-duration="1500" class="timeline-item">
-                <div class="timeline-dot">.</div>
-                <div class="timeline-content">
-                    <h3>SMK TARUNA BHAKTI DEPOK</h3>
-                    <p>2022 - 2025</p>
+                <h1>
+                    Halo, saya <span>Naufal.</span><br/>
+                    Mahasiswa Informatika &amp; Web Developer.
+                </h1>
+                <p>
+                    Saya sedang menempuh studi Informatika dan bersemangat membangun
+                    antarmuka web yang bersih, responsif, dan berorientasi pada pengalaman pengguna.
+                    Meski baru memulai perjalanan, saya percaya konsistensi mengalahkan bakat.
+                </p>
+                <div class="hero-cta">
+                    <a href="#project" class="btn-primary">Lihat Karya > </a>
+                    <a href="#contact" class="btn-outline">Hubungi Saya </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="skill" id="Service">
-        <div class="headling">
-            <h2>Skill & Project</h2>
-        </div>
-        <div data-aos="zoom-in" data-aos-duration="1500" class="wrapper">
-            <div class="container">
-                <h2>Otomotif</h2>
-                <div class="progress-bar">
-                    <div class="bar" style="--target: 89%"><span>89%</span></div>
-                </div>
-                <h2>Detailing</h2>
-                <div class="progress-bar">
-                    <div class="bar" style="--target: 84%"><span>84%</span></div>
-                </div>
-                <h2>Front-end</h2>
-                <div class="progress-bar">
-                    <div class="bar" style="--target: 50%"><span>50%</span></div>
-                </div>
-                <h2>Back-end</h2>
-                <div class="progress-bar">
-                    <div class="bar" style="--target: 28%"><span>28%</span></div>
-                </div>
+    <section class="about" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Keahlian & <span>Fokus Belajar </span></h2>
             </div>
-            <div data-aos="zoom-in-up" data-aos-duration="1500" class="container">
-                <h2>Ui/Ux </h2>
-                <div class="progress-bar">
-                    <div class="bar" style="--target: 70%"><span>70%</span></div>
+            <div class="skills-grid">
+                <div class="skills-card">
+                    <span class="skill-icon"> 01 </span>
+                    <h3>Frontend Development</h3>
+                    <p>Membangun antarmuka web dengan HTML, CSS, dan JavaScript yang responsif serta ramah pengguna.</p>
                 </div>
-                <h2>Editing</h2>
-                <div class="progress-bar">
-                    <div class="bar" style="--target: 55%"><span>55%</span></div>
+                <div class="skills-card">
+                    <span class="skill-icon"> 02 </span>
+                    <h3>Responsive Design</h3>
+                    <p>Memastikan tampilan optimal di berbagai ukuran layar, dari mobile hingga desktop.</p>
                 </div>
-                <h2>Design</h2>
-                <div class="progress-bar">
-                    <div class="bar" style="--target: 58%"><span>58%</span></div>
+                <div class="skills-card">
+                    <span class="skill-icon"> 03 </span>
+                    <h3>UI / UX</h3>
+                    <p>Mempelajari prinsip desain antarmuka, hierarki visual, dan pengalaman pengguna yang baik.</p>
+                </div>
+                <div class="skills-card">
+                    <span class="skill-icon"> 04 </span>
+                    <h3>Problem Solving</h3>
+                    <p>Melatih logika pemrograman dan algoritma melalui latihan rutin serta tugas perkuliahan.</p>
                 </div>
             </div>
         </div>
-        <div class="project">
-            <div class="row">
-                <article data-aos="zoom-in" data-aos-duration="1000" class="card">
-                    <img src="images/project/RX-7.png" alt="image" class="card-img">
-                       <div class="card-data">
-                            <span class="deskripsi">Canva</span>
-                            <h2 class="title">CDID X EMPIRE GARAGE</h2>
-                            <a href="https://www.instagram.com/p/DMZ9Xb1zsEf/" class="button">Instagram</a>
+    </section>
+
+    <section id="project">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Selected Works</span>
+                <h2 class="section-title">Proyek & <span>Ekspeimen</span></h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="projects-card">
+                    <div class="project-thumb"><span class="project-thumb-icon"></span></div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag"></span>
+                            <span class="tag"></span>
                         </div>
+                        <h3>Landing Page Company</h3>
+                        <p>Halaman profil perusahaan responsif dengan animasi scroll dan desain modern.</p>
+                        <a href="#" class="project-link">View Project > </a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <div class="project-thumb"><span class="project-thumb-icon"></span></div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag"></span>
+                            <span class="tag"></span>
+                        </div>
+                        <h3>Dashboar Sederhana</h3>
+                        <p>Dashboard interaktif untuk menampilkan data dari API publik dengan tampilan bersih.</p>
+                        <a href="#" class="project-link">View Project > </a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <div class="project-thumb"><span class="project-thumb-icon"></span></div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag"></span>
+                            <span class="tag"></span>
+                        </div>
+                        <h3>Mobile App</h3>
+                        <p>Konsep desain aplikasi mobile untuk manajemen tugas mahasiswa, dibuat di Figma.</p>
+                        <a href="#" class="project-link">View Project > </a>
+                    </div>
                 </article>
             </div>
         </div>
-        <div class="slider" style="
-            --width: 100px;
-            --height: 100px;
-            --quantity: 9;
-            ">
-            <div class="list">
-                <div class="item" style="--position: 1"><img src="images/1.png" alt=""></div>
-                <div class="item" style="--position: 2"><img src="images/2.png" alt=""></div>
-                <div class="item" style="--position: 3"><img src="images/3.png" alt=""></div>
-                <div class="item" style="--position: 4"><img src="images/4.png" alt=""></div>                        
-                <div class="item" style="--position: 5"><img src="images/5.png" alt=""></div>
-                <div class="item" style="--position: 6"><img src="images/6.png" alt=""></div>
-                <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>                        
-                <div class="item" style="--position: 8"><img src="images/8.png" alt=""></div>
-                <div class="item" style="--position: 9"><img src="images/9.png" alt=""></div>
-            </div>
-        </div>
     </section>
 
-    <section class="contact" id="Contact">
-        <div class="wrapper">
-            <div class="info">
-                <h2>Contact Me</h2>
-                <p class="more">Looking to collaborate or learn more about what I do? You can reach me through the contact information below</p>
-                <div class="contact-detail">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i data-aos="zoom-out-up" data-aos-duration="800" class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3 data-aos="zoom-out-up" data-aos-duration="1000" style="color: #c176b9;">Phone</h3>
-                            <p data-aos="zoom-out-up" data-aos-duration="1200"  style="color: #fff;">+62-878-6608-8705</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i data-aos="zoom-out-up" data-aos-duration="1000" class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3 data-aos="zoom-out-up" data-aos-duration="1200" style="color: #c176b9;">Email</h3>
-                            <p data-aos="zoom-out-up" data-aos-duration="1400" style="color: #fff;">muhammadnugroho262@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i data-aos="zoom-out-up" data-aos-duration="1200" class="fas fa-location-dot"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3 data-aos="zoom-out-up" data-aos-duration="1400" style="color: #c176b9;">Location</h3>
-                            <p data-aos="zoom-out-up" data-aos-duration="1600" style="color: #fff;">Indonesia</p>
-                        </div>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrap">
+                <div class="contact-info">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title">Mari <span>Terhubung</span></h2>
+                    <p>
+                        Saya terbuka untuk diskusi, kolaborasi proyek, atau sekadar berbagi ilmu.
+                        Jangan ragu untuk menghubungi saya melalui salah satu kanal di bawah ini.
+                    </p>
+                    <div class="contact-list">
+                        <a href="" class="contact-item">
+                            <span class="icon">✉</span>
+                            <span>
+                                <span class="label">Email</span>
+                                <span class="valvue"></span>
+                            </span>
+                        </a>
+                        <a href="" class="contact-item">
+                            <span class="icon">✉</span>
+                            <span>
+                                <span class="label">Email</span>
+                                <span class="valvue"></span>
+                            </span>
+                        </a>
+                        <a href="" class="contact-item">
+                            <span class="icon">✉</span>
+                            <span>
+                                <span class="label">Email</span>
+                                <span class="valvue"></span>
+                            </span>
+                        </a>
+                        <a href="" class="contact-item">
+                            <span class="icon">✉</span>
+                            <span>
+                                <span class="label">Email</span>
+                                <span class="valvue"></span>
+                            </span>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="forum">
-                <form action="#" method="POST">
-                    <div data-aos="zoom-out-up" data-aos-duration="1000" class="form-group">
-                        <input type="text" id="name" name="name" required>
-                        <label for="name">Your Name</label>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Nama lengkap" required/>
                     </div>
-                    <div data-aos="zoom-out-up" data-aos-duration="1000" class="form-group">
-                        <input type="email" id="email" name="email" required>
-                        <label for="email">Your Email</label>
+                    <div class="form-group">
+                        <label for="name">Email</label>
+                        <input type="email" id="email" placeholder="nama@gmail.com" required/>
                     </div>
-                    <div data-aos="zoom-out-up" data-aos-duration="1000" class="form-group">
-                        <input type="text" id="subject" name="subject" required>
-                        <label for="subject">Subject</label>
+                    <div class="form-group">
+                        <label for="name">Pesan</label>
+                        <input type="message" id="message" placeholder="Tulis pesanmu disini" required/>
                     </div>
-                    <div data-aos="zoom-out-up" data-aos-duration="1000" class="form-group">
-                        <textarea id="message" name="message" required></textarea>
-                        <label for="message">Your Message</label>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="btn-primary">Kirim Pesan</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.48/build/spline-viewer.js"></script>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const menuToggle = document.getElementById("toggle");
-        const navbar = document.getElementById("navbar");
-
-        menuToggle.addEventListener("click", function() {
-        navbar.classList.toggle("show");
-        });
-    });
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script> AOS.init(); </script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-        (function(){
-            emailjs.init("FD5z-Mw38MlLXv6P2");
-        })();
-
-        document.querySelector("form").addEventListener("submit", function(e) {
-            e.preventDefault();
-
-            emailjs.sendForm("server_prib", "template_banjir", this)
-                .then(function() {
-                    alert("Pesan berhasil dikirim!");
-                }, function(error) {
-                    alert("Gagal mengirim pesan: " + JSON.stringify(error));
-                });
-        });
-    </script>
+    <footer>
+        <div class="footer-wrap">
+            <p>© Domiyo 2026</p>
+            <div class="socials">
+                <a href="#" title="GitHub">⌘</a>
+                <a href="#" title="LinkedIn">in</a>
+                <a href="#" title="Instagram">◉</a>
+                <a href="#" title="Email">✉</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
